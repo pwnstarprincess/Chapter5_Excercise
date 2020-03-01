@@ -12,10 +12,10 @@ Public Class GpaForm
     Dim totalCreditsAttempted As Double
 
     ''Subroutine for recording course grading information.  Takes grade achieved and credit hours as variables.
-    ''Converts letter grade to numeric value.  Updates running gpa and total credits.  Clears text fields after updating variables.
+    ''Converts letter grade to numeric value.  Updates totalPointsEarned and totalCreditsAttempted.  Clears text fields after updating variables.
     Private Sub RecordCourse(grade As Char, credits As Double)
         ''Select case statement to translate letter Grade to numeric value.  
-        ''Update running GPA as applicable
+        ''Update totalPointsEarned
         ''Accepts lower case and upper case value for letter grade.
         ''Output to console in the event of any "unexpected data" 
         Select Case grade
@@ -33,7 +33,7 @@ Public Class GpaForm
                 System.Console.WriteLine("Invalid")
 
         End Select
-        ''Update total credits hours earned
+        ''Update total credits hours attempted
         totalCreditsAttempted += credits
         ''Clear masked text boxes 
         gradeText.Clear()
