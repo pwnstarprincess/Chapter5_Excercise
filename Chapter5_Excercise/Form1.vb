@@ -2,7 +2,8 @@
 ''March 1, 2020
 ''Chapter 5 Excercise Programming Project 1 (Grade Point Average)
 
-Option Explicit Off
+''Turn Explicit mode on
+Option Explicit On
 
 Public Class gpaForm
 
