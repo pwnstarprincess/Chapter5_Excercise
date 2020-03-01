@@ -71,7 +71,7 @@ Public Class gpaForm
 
     End Sub
     ''Subroutine to handle click of the "Calculate GPA" button.  Calls the DisplayGPA subroutine
-    Private Sub calculateGpaButton_Click(sender As Object, e As EventArgs) Handles calculateGpaButton.Click
+    Private Sub CalculateGpaButton_Click(sender As Object, e As EventArgs) Handles calculateGpaButton.Click
         DisplayGPA()
     End Sub
 End Class
