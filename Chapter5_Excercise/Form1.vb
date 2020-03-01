@@ -1,9 +1,14 @@
-﻿Public Class gpaForm
+﻿''Jennifer Pezzulo
+''March 1, 2020
+''Chapter 5 Excercise Programming Project 1 (Grade Point Average)
 
-    ''Dim creditHours As Double
+Option Explicit Off
+
+Public Class gpaForm
+
+
     Dim runningGPA As Double
     Dim totalCredits As Double
-
     Private Sub RecordCourse(grade As Char, credits As Double)
 
         Select Case grade
