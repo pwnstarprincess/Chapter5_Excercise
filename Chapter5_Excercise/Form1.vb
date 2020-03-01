@@ -7,8 +7,8 @@ Option Explicit Off
 Public Class gpaForm
 
     ''Variables to hold running gpa and total credits
-    Dim runningGPA As Double
-    Dim totalCredits As Double
+    Dim totalPointsEarned As Double
+    Dim totalCreditsAttempted As Double
 
     ''Subroutine for recording course grading information.  Takes grade achieved and credit hours as variables.
     ''Converts letter grade to numeric value.  Updates running gpa and total credits.  Clears text fields after updating variables.
@@ -19,21 +19,21 @@ Public Class gpaForm
         ''Output to console in the event of any "unexpected data" 
         Select Case grade
             Case "A", "a"
-                runningGPA += credits * 4
+                totalPointsEarned += credits * 4
             Case "B", "b"
-                runningGPA += credits * 3
+                totalPointsEarned += credits * 3
             Case "C", "c"
-                runningGPA += credits * 2
+                totalPointsEarned += credits * 2
             Case "D", "d"
-                runningGPA += credits * 1
+                totalPointsEarned += credits * 1
             Case "F", "f"
-                runningGPA += credits * 0
+                totalPointsEarned += credits * 0
             Case Else
                 System.Console.WriteLine("Invalid")
 
         End Select
         ''Update total credits hours earned
-        totalCredits += credits
+        totalCreditsAttempted += credits
         ''Clear masked text boxes 
         gradeText.Clear()
         creditText.Clear()
@@ -55,7 +55,7 @@ Public Class gpaForm
     ''Returns the running GPA divided by the total credits earned.  The Value is rounded to two decimal places 
     Private Function GetRunningGPA() As Double
         ''Total GPA = Total Points earned / Total Credits attempted.  Round to two decimal places
-        Return Math.Round(runningGPA / totalCredits, 2)
+        Return Math.Round(totalPointsEarned / totalCreditsAttempted, 2)
 
     End Function
 
