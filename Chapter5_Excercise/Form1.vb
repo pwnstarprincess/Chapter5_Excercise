@@ -6,7 +6,7 @@ Option Explicit Off
 
 Public Class gpaForm
 
-    ''Variables to hold running gpa and total credits
+    ''Variables to hold total points earned and total credits attempted
     Dim totalPointsEarned As Double
     Dim totalCreditsAttempted As Double
 
