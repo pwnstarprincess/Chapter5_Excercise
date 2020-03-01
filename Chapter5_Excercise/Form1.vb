@@ -5,7 +5,7 @@
 ''Turn Explicit mode on
 Option Explicit On
 
-Public Class gpaForm
+Public Class GpaForm
 
     ''Variables to hold total points earned and total credits attempted
     Dim totalPointsEarned As Double
