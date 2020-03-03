@@ -1,5 +1,5 @@
 ﻿''Jennifer Pezzulo
-''March 1, 2020
+''March 3, 2020
 ''Chapter 5 Excercise Programming Project 1 (Grade Point Average)
 
 ''Turn Explicit mode on

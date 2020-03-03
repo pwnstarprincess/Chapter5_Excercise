@@ -101,7 +101,7 @@ Partial Class GpaForm
         Me.creditText.Size = New System.Drawing.Size(45, 26)
         Me.creditText.TabIndex = 9
         '
-        'gpaForm
+        'GpaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -114,7 +114,7 @@ Partial Class GpaForm
         Me.Controls.Add(Me.gpaResults)
         Me.Controls.Add(Me.calculateGpaButton)
         Me.Controls.Add(Me.recordCourseButton)
-        Me.Name = "gpaForm"
+        Me.Name = "GpaForm"
         Me.Text = "GPA"
         Me.ResumeLayout(False)
         Me.PerformLayout()
