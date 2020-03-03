@@ -1,6 +1,7 @@
 ﻿''Jennifer Pezzulo
 ''March 3, 2020
 ''Chapter 5 Excercise Programming Project 1 (Grade Point Average)
+''Git:  https://github.com/pwnstarprincess/Chapter5_Excercise
 
 ''Turn Explicit mode on
 Option Explicit On
