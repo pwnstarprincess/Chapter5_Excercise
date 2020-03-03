@@ -62,7 +62,8 @@ Public Class GpaForm
 
     ''Subroutine to display the running GPA in the GPA read-only text box
     Private Sub DisplayGPA()
-        gpaResults.Text = Convert.ToString(GetRunningGPA())
+        gpaResults.Text = GetRunningGPA().ToString("#.0#")
+
     End Sub
     ''Subroutine to handle click of "Record the Course" Button.  Calls the RecordCourse Subroutine
     Private Sub RecordCourseButton_Click(sender As Object, e As EventArgs) Handles recordCourseButton.Click
